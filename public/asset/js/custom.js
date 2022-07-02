@@ -2012,12 +2012,12 @@ $( document ).ready(function() {
 });
 
 // masonry
-$('.grid').imagesLoaded(function () {
-    $('.grid').isotope({
-        itemSelector: 'li',
-        layoutMode: 'masonry'
-    });
-});
+// $('.grid').imagesLoaded(function () {
+//     $('.grid').isotope({
+//         itemSelector: 'li',
+//         layoutMode: 'masonry'
+//     });
+// });
 
 
 // blog

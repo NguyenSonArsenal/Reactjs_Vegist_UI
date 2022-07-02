@@ -17,8 +17,9 @@ const Header = () => {
                                 </div>
                                 <div className="header-element search-wrap">
                                     <input type="text" name="search" placeholder="Search product."/>
-                                    <a href="search.html" className="search-btn"><i
-                                        className="fa fa-search"></i></a>
+                                    <Link to="/search" className="search-btn">
+                                        <i className="fa fa-search"></i>
+                                    </Link>
                                 </div>
                                 <div className="header-element right-block-box">
                                     <ul className="shop-element">
@@ -31,12 +32,12 @@ const Header = () => {
                                         <li className="side-wrap user-wrap">
                                             <div className="acc-desk">
                                                 <div className="user-icon">
-                                                    <a href="account.html" className="user-icon-desk">
+                                                    <Link className="user-icon-desk" to="/profile">
                                                         <span><i className="icon-user"></i></span>
-                                                    </a>
+                                                    </Link>
                                                 </div>
                                                 <div className="user-info">
-                                                    <span className="acc-title">Account</span>
+                                                    <span className="acc-title"><Link to="/account" style={{color: "#f5ab1e"}}>Account</Link></span>
                                                     <div className="account-login">
                                                         <Link to="/register">Register</Link>
                                                         <Link to="/login">Log in</Link>
@@ -44,16 +45,16 @@ const Header = () => {
                                                 </div>
                                             </div>
                                             <div className="acc-mob">
-                                                <a href="account.html" className="user-icon">
+                                                <Link to="/profile" className="user-icon">
                                                     <span><i className="icon-user"></i></span>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </li>
                                         <li className="side-wrap wishlist-wrap">
-                                            <a href="wishlist.html" className="header-wishlist">
+                                            <Link to="/cart" className="header-wishlist">
                                                 <span className="wishlist-icon"><i className="icon-heart"></i></span>
                                                 <span className="wishlist-counter">0</span>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li className="side-wrap cart-wrap">
                                             <div className="shopping-widget">
@@ -89,7 +90,7 @@ const Header = () => {
                                                 <div className="mainwrap">
                                                     <ul className="main-menu">
                                                         <li className="menu-link parent">
-                                                            <a href="index.html" className="link-title">
+                                                            <a href="#" className="link-title">
                                                                 <span className="sp-link-title">Home</span>
                                                             </a>
                                                         </li>
@@ -116,20 +117,20 @@ const Header = () => {
                                                                     <ul className="dropdown-supmenu collapse"
                                                                         id="collapse-sub-mega-menu">
                                                                         <li className="supmenu-li"><a
-                                                                            href="product.html">Fruit
+                                                                            href="#">Fruit
                                                                             & nut</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="product.html">Snack
+                                                                            href="#">Snack
                                                                             food</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="product.html">Organics nut gifts</a>
+                                                                            href="#">Organics nut gifts</a>
                                                                         </li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="product.html">Non-dairy</a></li>
+                                                                            href="#">Non-dairy</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="product.html">Mayonnaise</a></li>
+                                                                            href="#">Mayonnaise</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="product.html">Milk
+                                                                            href="#">Milk
                                                                             almond</a></li>
                                                                     </ul>
                                                                 </li>
@@ -144,21 +145,21 @@ const Header = () => {
                                                                     <ul className="dropdown-supmenu collapse"
                                                                         id="collapse-fruits-menu">
                                                                         <li className="supmenu-li"><a
-                                                                            href="product.html">Oranges</a></li>
+                                                                            href="#">Oranges</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="product.html">Coffee
+                                                                            href="#">Coffee
                                                                             creamers</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="product.html">Ghee
+                                                                            href="#">Ghee
                                                                             beverages</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="product.html">Ranch
+                                                                            href="#">Ranch
                                                                             salad</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="product.html">Hemp
+                                                                            href="#">Hemp
                                                                             milk</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="product.html">Nuts &
+                                                                            href="#">Nuts &
                                                                             seeds</a></li>
                                                                     </ul>
                                                                 </li>
@@ -174,21 +175,21 @@ const Header = () => {
                                                                     <ul className="dropdown-supmenu collapse"
                                                                         id="collapse-banana-menu">
                                                                         <li className="supmenu-li"><a
-                                                                            href="product.html">Fresh
+                                                                            href="#">Fresh
                                                                             gala</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="product.html">Fresh
+                                                                            href="#">Fresh
                                                                             berries</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="product.html">Fruit
+                                                                            href="#">Fruit
                                                                             & nut</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="product.html">Fifts
+                                                                            href="#">Fifts
                                                                             mixed fruits</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="product.html">Oranges</a></li>
+                                                                            href="#">Oranges</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="product.html">Oranges</a></li>
+                                                                            href="#">Oranges</a></li>
                                                                     </ul>
                                                                 </li>
                                                                 <li className="megamenu-li parent">
@@ -202,28 +203,28 @@ const Header = () => {
                                                                     <ul className="dropdown-supmenu collapse"
                                                                         id="collapse-apple-menu">
                                                                         <li className="supmenu-li"><a
-                                                                            href="product.html">Pears
+                                                                            href="#">Pears
                                                                             produce</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="product.html">Bananas</a></li>
+                                                                            href="#">Bananas</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="product.html">Natural grassbeab</a>
+                                                                            href="#">Natural grassbeab</a>
                                                                         </li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="product.html">Fresh
+                                                                            href="#">Fresh
                                                                             green orange</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="product.html">Fresh
+                                                                            href="#">Fresh
                                                                             organic reachter</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="product.html">Balckberry
+                                                                            href="#">Balckberry
                                                                             100%organic</a></li>
                                                                     </ul>
                                                                 </li>
                                                             </ul>
                                                         </li>
                                                         <li className="menu-link parent">
-                                                            <a href="grid-list.html" className="link-title">
+                                                            <a href="#" className="link-title">
                                                                 <span className="sp-link-title">Collection</span>
                                                                 <i className="fa fa-angle-down"></i>
                                                             </a>
@@ -235,28 +236,28 @@ const Header = () => {
                                                             <ul className="dropdown-submenu banner-menu collapse"
                                                                 id="collapse-banner-menu">
                                                                 <li className="menu-banner">
-                                                                    <a href="grid-list.html"
+                                                                    <a href="#"
                                                                        className="menu-banner-img"><img
                                                                         src="/asset/image/menu-banner01.jpg" alt="menu-image"
                                                                         className="img-fluid"/></a>
-                                                                    <a href="grid-list.html"
+                                                                    <a href="#"
                                                                        className="menu-banner-title"><span>Bestseller</span></a>
                                                                 </li>
                                                                 <li className="menu-banner">
-                                                                    <a href="grid-list.html"
+                                                                    <a href="#"
                                                                        className="menu-banner-img"><img
                                                                         src="/asset/image/menu-banner02.jpg" alt="menu-image"
                                                                         className="img-fluid"/></a>
-                                                                    <a href="grid-list.html"
+                                                                    <a href="#"
                                                                        className="menu-banner-title"><span>Special
                                                                         product</span></a>
                                                                 </li>
                                                                 <li className="menu-banner">
-                                                                    <a href="grid-list.html"
+                                                                    <a href="#"
                                                                        className="menu-banner-img"><img
                                                                         src="/asset/image/menu-banner03.jpg" alt="mneu image"
                                                                         className="img-fluid"/></a>
-                                                                    <a href="grid-list.html"
+                                                                    <a href="#"
                                                                        className="menu-banner-title"><span>Featured
                                                                         product</span></a>
                                                                 </li>
@@ -275,8 +276,7 @@ const Header = () => {
                                                             <ul className="dropdown-submenu sub-menu collapse"
                                                                 id="collapse-page-menu">
                                                                 <li className="submenu-li">
-                                                                    <a href="about-us.html" className="submenu-link">About
-                                                                        us</a>
+                                                                    <Link to="/about-us" className="submenu-link">About us</Link>
                                                                 </li>
                                                                 <li className="submenu-li">
                                                                     <a href="javascript:void(0);"
@@ -288,42 +288,37 @@ const Header = () => {
                                                                     <ul className="collapse blog-style-1"
                                                                         id="account-menu">
                                                                         <li>
-                                                                            <a href="order-history.html"
+                                                                            <a href="#"
                                                                                className="sub-style"><span>Order</span></a>
-                                                                            <a href="order-history.html"
+                                                                            <a href="#"
                                                                                className="blog-sub-style"><span>Order</span></a>
-                                                                            <a href="profile.html"
+                                                                            <a href="#"
                                                                                className="sub-style"><span>Profile</span></a>
-                                                                            <a href="profile.html"
-                                                                               className="blog-sub-style"><span>Profile</span></a>
-                                                                            <a href="pro-wishlist.html"
+                                                                            <Link to="/profile"
+                                                                               className="blog-sub-style"><span>Profile</span></Link>
+                                                                            <a href="#"
                                                                                className="sub-style"><span>Wishlist</span></a>
-                                                                            <a href="pro-wishlist.html"
+                                                                            <a href="#"
                                                                                className="blog-sub-style"><span>Wishlist</span></a>
                                                                         </li>
                                                                     </ul>
                                                                 </li>
                                                                 <li className="submenu-li">
-                                                                    <a href="billing-info.html"
-                                                                       className="submenu-link">Billing
-                                                                        info</a>
+                                                                    <a href="#" className="submenu-link">Billing info</a>
                                                                 </li>
                                                                 <li className="submenu-li">
-                                                                    <a href="faq%27s.html"
-                                                                       className="submenu-link">Faq's</a>
+                                                                    <a href="#" className="submenu-link">Faq's</a>
                                                                 </li>
                                                                 <li className="submenu-li">
-                                                                    <a href="contact.html" className="submenu-link">Contact
-                                                                        us</a>
+                                                                    <a href="#" className="submenu-link">Contact us</a>
                                                                 </li>
                                                                 <li className="submenu-li">
-                                                                    <a href="terms-conditions.html"
-                                                                       className="submenu-link">Terms & conditions</a>
+                                                                    <a href="#" className="submenu-link">Terms & conditions</a>
                                                                 </li>
                                                             </ul>
                                                         </li>
                                                         <li className="menu-link parent">
-                                                            <a href="blog.html" className="link-title">
+                                                            <a href="#" className="link-title">
                                                                 <span className="sp-link-title">Blogs</span>
                                                             </a>
                                                         </li>
@@ -361,76 +356,76 @@ const Header = () => {
                 <ul className="cart-item-loop">
                     <li className="cart-item">
                         <div className="cart-img">
-                            <a href="product.html">
-                                <img src="asset/image/cart-img.jpg" alt="cart-image" className="img-fluid"/>
+                            <a href="#">
+                                <img src="/asset/image/cart-img.jpg" alt="cart-image" className="img-fluid"/>
                             </a>
                         </div>
                         <div className="cart-title">
-                            <h6><a href="product.html">Fresh apple 5kg</a></h6>
+                            <h6><a href="#">Fresh apple 5kg</a></h6>
                             <div className="cart-pro-info">
                                 <div className="cart-qty-price">
                                     <span className="quantity">1 x </span>
                                     <span className="price-box">$250.00 USD</span>
                                 </div>
                                 <div className="delete-item-cart">
-                                    <a href="empty-cart.html"><i className="icon-trash icons"></i></a>
+                                    <a href="#"><i className="icon-trash icons"></i></a>
                                 </div>
                             </div>
                         </div>
                     </li>
                     <li className="cart-item">
                         <div className="cart-img">
-                            <a href="product.html">
-                                <img src="asset/image/cart-img02.jpg" alt="cart-image" className="img-fluid"/>
+                            <a href="#">
+                                <img src="/asset/image/cart-img02.jpg" alt="cart-image" className="img-fluid"/>
                             </a>
                         </div>
                         <div className="cart-title">
-                            <h6><a href="product.html">Natural grassbean 4kg</a></h6>
+                            <h6><a href="#">Natural grassbean 4kg</a></h6>
                             <div className="cart-pro-info">
                                 <div className="cart-qty-price">
                                     <span className="quantity">1 x </span>
                                     <span className="price-box">$300.00 USD</span>
                                 </div>
                                 <div className="delete-item-cart">
-                                    <a href="empty-cart.html"><i className="icon-trash icons"></i></a>
+                                    <a href="#"><i className="icon-trash icons"></i></a>
                                 </div>
                             </div>
                         </div>
                     </li>
                     <li className="cart-item">
                         <div className="cart-img">
-                            <a href="product.html">
-                                <img src="asset/image/cart-img03.jpg" alt="cart-image" className="img-fluid"/>
+                            <a href="#">
+                                <img src="/asset/image/cart-img03.jpg" alt="cart-image" className="img-fluid"/>
                             </a>
                         </div>
                         <div className="cart-title">
-                            <h6><a href="product.html">Organic coconut juice 5ltr</a></h6>
+                            <h6><a href="#">Organic coconut juice 5ltr</a></h6>
                             <div className="cart-pro-info">
                                 <div className="cart-qty-price">
                                     <span className="quantity">1 x </span>
                                     <span className="price-box">$250.00 USD</span>
                                 </div>
                                 <div className="delete-item-cart">
-                                    <a href="empty-cart.html"><i className="icon-trash icons"></i></a>
+                                    <a href="#"><i className="icon-trash icons"></i></a>
                                 </div>
                             </div>
                         </div>
                     </li>
                     <li className="cart-item">
                         <div className="cart-img">
-                            <a href="product.html">
-                                <img src="asset/image/cart-img04.jpg" alt="cart-image" className="img-fluid"/>
+                            <a href="#">
+                                <img src="/asset/image/cart-img04.jpg" alt="cart-image" className="img-fluid"/>
                             </a>
                         </div>
                         <div className="cart-title">
-                            <h6><a href="product.html">Orange juice 5ltr</a></h6>
+                            <h6><a href="#">Orange juice 5ltr</a></h6>
                             <div className="cart-pro-info">
                                 <div className="cart-qty-price">
                                     <span className="quantity">1 x </span>
                                     <span className="price-box">$350.00 USD</span>
                                 </div>
                                 <div className="delete-item-cart">
-                                    <a href="empty-cart.html"><i className="icon-trash icons"></i></a>
+                                    <a href="#"><i className="icon-trash icons"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -445,8 +440,8 @@ const Header = () => {
                     </li>
                     <li className="mini-cart-btns">
                         <div className="cart-btns">
-                            <a href="cart.html" className="btn btn-style2">View cart</a>
-                            <a href="checkout.html" className="btn btn-style2">checkout</a>
+                            <Link to="/cart" className="btn btn-style2">View cart</Link>
+                            <Link to="/checkout" className="btn btn-style2">checkout</Link>
                         </div>
                     </li>
                 </ul>
