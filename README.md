@@ -11,5 +11,6 @@
 ### `npm install`
 
 ## RUN
-### `npm start`
+### `npx json-server --watch db.json --port 3002` on 1 tab terminal
+### `npm start` on 1 tab terminal
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
