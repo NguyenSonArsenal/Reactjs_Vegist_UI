@@ -97,7 +97,7 @@ const Header = () => {
                                                 <div className="mainwrap">
                                                     <ul className="main-menu">
                                                         <li className="menu-link parent">
-                                                            <Link to="/" className="link-title">
+                                                            <Link to="/" className="link-title" onClick={() => refreshPage()}>
                                                                 <span className="sp-link-title">Home</span>
                                                             </Link>
                                                         </li>
