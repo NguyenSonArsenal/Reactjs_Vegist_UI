@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 const Footer = () => {
     return <>
@@ -95,7 +96,7 @@ const Footer = () => {
                                         <i className="fa fa-angle-down"></i>
                                     </a>
                                     <ul className="f-link-ul collapse" id="services" data-bs-parent="#footer-accordian">
-                                        <li className="f-link-ul-li"><a href="about-us.html">About vegist</a></li>
+                                        <li className="f-link-ul-li"><Link to="about-us.html">About vegist</Link></li>
                                         <li className="f-link-ul-li"><a href="faq%27s.html">Faq's</a></li>
                                         <li className="f-link-ul-li"><a href="contact.html">Contact us</a></li>
                                         <li className="f-link-ul-li"><a href="blog-style-1-3-grid.html">News</a></li>

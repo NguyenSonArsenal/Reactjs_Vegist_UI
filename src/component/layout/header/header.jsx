@@ -17,7 +17,7 @@ const Header = () => {
                         <div className="col">
                             <div className="header-main">
                                 <div className="header-element logo">
-                                    <Link to="/" onClick={refreshPage}>
+                                    <Link to="/" onClick={() => refreshPage()}>
                                         <img src="/asset/image/logo1.png" alt="logo-image" className="img-fluid"/>
                                     </Link>
 
@@ -97,12 +97,12 @@ const Header = () => {
                                                 <div className="mainwrap">
                                                     <ul className="main-menu">
                                                         <li className="menu-link parent">
-                                                            <a href="#" className="link-title">
+                                                            <Link to="/" className="link-title">
                                                                 <span className="sp-link-title">Home</span>
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                         <li className="menu-link parent">
-                                                            <a href="javascript:void(0);" className="link-title">
+                                                            <a href="javascript:void(0)" className="link-title">
                                                                 <span className="sp-link-title">Shop</span>
                                                                 <i className="fa fa-angle-down"></i>
                                                             </a>
@@ -124,20 +124,20 @@ const Header = () => {
                                                                     <ul className="dropdown-supmenu collapse"
                                                                         id="collapse-sub-mega-menu">
                                                                         <li className="supmenu-li"><a
-                                                                            href="#">Fruit
+                                                                            href="product.html">Fruit
                                                                             & nut</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="#">Snack
+                                                                            href="product.html">Snack
                                                                             food</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="#">Organics nut gifts</a>
+                                                                            href="product.html">Organics nut gifts</a>
                                                                         </li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="#">Non-dairy</a></li>
+                                                                            href="product.html">Non-dairy</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="#">Mayonnaise</a></li>
+                                                                            href="product.html">Mayonnaise</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="#">Milk
+                                                                            href="product.html">Milk
                                                                             almond</a></li>
                                                                     </ul>
                                                                 </li>
@@ -152,21 +152,21 @@ const Header = () => {
                                                                     <ul className="dropdown-supmenu collapse"
                                                                         id="collapse-fruits-menu">
                                                                         <li className="supmenu-li"><a
-                                                                            href="#">Oranges</a></li>
+                                                                            href="product.html">Oranges</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="#">Coffee
+                                                                            href="product.html">Coffee
                                                                             creamers</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="#">Ghee
+                                                                            href="product.html">Ghee
                                                                             beverages</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="#">Ranch
+                                                                            href="product.html">Ranch
                                                                             salad</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="#">Hemp
+                                                                            href="product.html">Hemp
                                                                             milk</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="#">Nuts &
+                                                                            href="product.html">Nuts &
                                                                             seeds</a></li>
                                                                     </ul>
                                                                 </li>
@@ -182,21 +182,21 @@ const Header = () => {
                                                                     <ul className="dropdown-supmenu collapse"
                                                                         id="collapse-banana-menu">
                                                                         <li className="supmenu-li"><a
-                                                                            href="#">Fresh
+                                                                            href="product.html">Fresh
                                                                             gala</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="#">Fresh
+                                                                            href="product.html">Fresh
                                                                             berries</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="#">Fruit
+                                                                            href="product.html">Fruit
                                                                             & nut</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="#">Fifts
+                                                                            href="product.html">Fifts
                                                                             mixed fruits</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="#">Oranges</a></li>
+                                                                            href="product.html">Oranges</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="#">Oranges</a></li>
+                                                                            href="product.html">Oranges</a></li>
                                                                     </ul>
                                                                 </li>
                                                                 <li className="megamenu-li parent">
@@ -210,28 +210,28 @@ const Header = () => {
                                                                     <ul className="dropdown-supmenu collapse"
                                                                         id="collapse-apple-menu">
                                                                         <li className="supmenu-li"><a
-                                                                            href="#">Pears
+                                                                            href="product.html">Pears
                                                                             produce</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="#">Bananas</a></li>
+                                                                            href="product.html">Bananas</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="#">Natural grassbeab</a>
+                                                                            href="product.html">Natural grassbeab</a>
                                                                         </li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="#">Fresh
+                                                                            href="product.html">Fresh
                                                                             green orange</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="#">Fresh
+                                                                            href="product.html">Fresh
                                                                             organic reachter</a></li>
                                                                         <li className="supmenu-li"><a
-                                                                            href="#">Balckberry
+                                                                            href="product.html">Balckberry
                                                                             100%organic</a></li>
                                                                     </ul>
                                                                 </li>
                                                             </ul>
                                                         </li>
                                                         <li className="menu-link parent">
-                                                            <a href="#" className="link-title">
+                                                            <a href="grid-list.html" className="link-title">
                                                                 <span className="sp-link-title">Collection</span>
                                                                 <i className="fa fa-angle-down"></i>
                                                             </a>
@@ -243,35 +243,35 @@ const Header = () => {
                                                             <ul className="dropdown-submenu banner-menu collapse"
                                                                 id="collapse-banner-menu">
                                                                 <li className="menu-banner">
-                                                                    <a href="#"
+                                                                    <a href="grid-list.html"
                                                                        className="menu-banner-img"><img
                                                                         src="/asset/image/menu-banner01.jpg" alt="menu-image"
                                                                         className="img-fluid"/></a>
-                                                                    <a href="#"
+                                                                    <a href="grid-list.html"
                                                                        className="menu-banner-title"><span>Bestseller</span></a>
                                                                 </li>
                                                                 <li className="menu-banner">
-                                                                    <a href="#"
+                                                                    <a href="grid-list.html"
                                                                        className="menu-banner-img"><img
                                                                         src="/asset/image/menu-banner02.jpg" alt="menu-image"
                                                                         className="img-fluid"/></a>
-                                                                    <a href="#"
+                                                                    <a href="grid-list.html"
                                                                        className="menu-banner-title"><span>Special
                                                                         product</span></a>
                                                                 </li>
                                                                 <li className="menu-banner">
-                                                                    <a href="#"
+                                                                    <a href="grid-list.html"
                                                                        className="menu-banner-img"><img
                                                                         src="/asset/image/menu-banner03.jpg" alt="mneu image"
                                                                         className="img-fluid"/></a>
-                                                                    <a href="#"
+                                                                    <a href="grid-list.html"
                                                                        className="menu-banner-title"><span>Featured
                                                                         product</span></a>
                                                                 </li>
                                                             </ul>
                                                         </li>
                                                         <li className="menu-link parent">
-                                                            <a href="javascript:void(0);" className="link-title">
+                                                            <a href="javascript:void(0)" className="link-title">
                                                                 <span className="sp-link-title">Pages</span>
                                                                 <i className="fa fa-angle-down"></i>
                                                             </a>
@@ -283,10 +283,10 @@ const Header = () => {
                                                             <ul className="dropdown-submenu sub-menu collapse"
                                                                 id="collapse-page-menu">
                                                                 <li className="submenu-li">
-                                                                    <Link to="/about-us" onClick={refreshPage} className="submenu-link">About us</Link>
+                                                                    <Link to="/about-us" className="submenu-link" onClick={() => refreshPage()}>About us</Link>
                                                                 </li>
                                                                 <li className="submenu-li">
-                                                                    <a href="javascript:void(0);"
+                                                                    <a href="javascript:void(0)"
                                                                        className="g-l-link"><span>Account</span> <i
                                                                         className="fa fa-angle-right"></i></a>
                                                                     <a href="#account-menu" data-bs-toggle="collapse"
@@ -295,37 +295,42 @@ const Header = () => {
                                                                     <ul className="collapse blog-style-1"
                                                                         id="account-menu">
                                                                         <li>
-                                                                            <a href="#"
+                                                                            <a href="order-history.html"
                                                                                className="sub-style"><span>Order</span></a>
-                                                                            <a href="#"
+                                                                            <a href="order-history.html"
                                                                                className="blog-sub-style"><span>Order</span></a>
-                                                                            <a href="#"
+                                                                            <a href="profile.html"
                                                                                className="sub-style"><span>Profile</span></a>
-                                                                            <Link to="/profile"
-                                                                               className="blog-sub-style"><span>Profile</span></Link>
-                                                                            <a href="#"
+                                                                            <a href="profile.html"
+                                                                               className="blog-sub-style"><span>Profile</span></a>
+                                                                            <a href="pro-wishlist.html"
                                                                                className="sub-style"><span>Wishlist</span></a>
-                                                                            <a href="#"
+                                                                            <a href="pro-wishlist.html"
                                                                                className="blog-sub-style"><span>Wishlist</span></a>
                                                                         </li>
                                                                     </ul>
                                                                 </li>
                                                                 <li className="submenu-li">
-                                                                    <a href="#" className="submenu-link">Billing info</a>
+                                                                    <a href="billing-info.html"
+                                                                       className="submenu-link">Billing
+                                                                        info</a>
                                                                 </li>
                                                                 <li className="submenu-li">
-                                                                    <a href="#" className="submenu-link">Faq's</a>
+                                                                    <a href="faq%27s.html"
+                                                                       className="submenu-link">Faq's</a>
                                                                 </li>
                                                                 <li className="submenu-li">
-                                                                    <a href="#" className="submenu-link">Contact us</a>
+                                                                    <a href="contact.html" className="submenu-link">Contact
+                                                                        us</a>
                                                                 </li>
                                                                 <li className="submenu-li">
-                                                                    <a href="#" className="submenu-link">Terms & conditions</a>
+                                                                    <a href="terms-conditions.html"
+                                                                       className="submenu-link">Terms & conditions</a>
                                                                 </li>
                                                             </ul>
                                                         </li>
                                                         <li className="menu-link parent">
-                                                            <a href="#" className="link-title">
+                                                            <a href="blog.html" className="link-title">
                                                                 <span className="sp-link-title">Blogs</span>
                                                             </a>
                                                         </li>
