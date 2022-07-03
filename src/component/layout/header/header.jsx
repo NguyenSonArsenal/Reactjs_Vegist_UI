@@ -2,6 +2,13 @@ import React from 'react';
 import {Link} from "react-router-dom";
 
 const Header = () => {
+
+    function refreshPage() {
+        setTimeout(()=>{
+            window.location.reload(false);
+        }, 100);
+    }
+
     return <>
         <header className="header-area">
             <div className="header-main-area">
@@ -10,7 +17,7 @@ const Header = () => {
                         <div className="col">
                             <div className="header-main">
                                 <div className="header-element logo">
-                                    <Link to="/">
+                                    <Link to="/" onClick={refreshPage}>
                                         <img src="/asset/image/logo1.png" alt="logo-image" className="img-fluid"/>
                                     </Link>
 
@@ -276,7 +283,7 @@ const Header = () => {
                                                             <ul className="dropdown-submenu sub-menu collapse"
                                                                 id="collapse-page-menu">
                                                                 <li className="submenu-li">
-                                                                    <Link to="/about-us" className="submenu-link">About us</Link>
+                                                                    <Link to="/about-us" onClick={refreshPage} className="submenu-link">About us</Link>
                                                                 </li>
                                                                 <li className="submenu-li">
                                                                     <a href="javascript:void(0);"
